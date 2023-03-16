@@ -1,8 +1,8 @@
 pipeline {
 	agent any
 	environment {
-		PATH = /home/ubuntu/ProfilesDemoProject:$PATH
-		}
+		PATH = /etc/maven:$PATH
+	}
 	  stages {
 		  stage("git") {
 			  steps{
