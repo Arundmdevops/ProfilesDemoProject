@@ -6,7 +6,7 @@ pipeline {
 	  stages {
 		  stage("git") {
 			  steps{
-				 git branch: 'main', url: 'https://github.com/Arundmdevops/Pubarun.git'
+				 git 'https://github.com/Arundmdevops/ProfilesDemoProject.git'
 				}
 			}
 		  stage("maven build") {
