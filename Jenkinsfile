@@ -1,5 +1,7 @@
 pipeline {
 	agent any
+	environment {
+		PATH = /home/ubuntu/ProfilesDemoProject:$PATH
 	  stages {
 		  stage("git") {
 			  steps{
