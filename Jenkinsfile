@@ -15,7 +15,7 @@ pipeline {
 			  steps{
 				  sshagent(['deploy_key']) {
 				  }
-				  sh "scp -o StrictHostKeyChecking=no /target/ProfilesDemoProject-0.0.1-SNAPSHOT.jar ubuntu@172-31-44-233:/opt/apache-tomcat-10.1.7/webapps"
+				  sh "scp -o StrictHostKeyChecking=no /target/ProfilesDemoProject-0.0.1-SNAPSHOT.jar ubuntu@13.231.137.105:/opt/apache-tomcat-10.1.7/webapps"
                                 }
 		  	}
 		}
